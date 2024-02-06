@@ -1,0 +1,11 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: rocker/verse:3.5.3
+    steps:
+      - checkout
+      - run:
+          name: Run tests 
+          command: R -e "source('tests/testthat.R')"
+      

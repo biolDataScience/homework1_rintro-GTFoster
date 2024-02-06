@@ -1,0 +1,163 @@
+---
+title: "Introduction to R Assignment"
+author: "Your Name"
+date: 
+output: pdf_document
+---
+
+
+
+
+
+## Working with R markdown files
+
+
+This assignment is simply to make sure you have practice using the R language in the context of R markdown, Circle CI (continuous integration), and git/Github. 
+
+
+There are some questions below. I will also grade based on you adding a Travis-CI badge for your assignment to the repo (1 question worth of points), and the proper use of Github through git interface (not uploading files on the web interface, but using git add/commit/push with informative messages). 
+
+
+
+Create 4 vectors: one numeric, one factor, one character, and one boolean
+
+```{r q1}
+
+numericVec <- NA
+factorVec <- NA
+characterVec <- NA
+boolVec <- NA
+
+```
+
+
+
+
+
+Create a data.frame (name it df1) containing 4 columns, each column being a vector of random numbers generated from a Poisson distribution with mean 2.
+
+```{r df1}
+
+df1 <- NA
+
+```
+
+
+
+
+Write a function that takes a vector and finds the maximum value - minimum value. This function should ignore NA values.
+
+
+```{r getMaxMin}
+
+getMaxMin <- function(x){
+
+
+}
+
+```
+
+
+
+
+Write a function to find the fraction of entries in a vector which are greater or equal to a threshold (which is an argument to the function).
+
+
+```{r getFrac}
+
+getFrac <- function(x){
+
+
+}
+
+```
+
+
+
+
+Given a list of data.frames, write a function that computes the column means of each list element,and appends them into a single output data.frame.
+
+
+```{r getListSummary}
+
+getListSummary <- function(){
+
+
+
+}
+
+```
+
+
+
+
+
+
+
+
+
+
+Using the `mtcars` dataset that comes with base R, write a function that returns the average miles per gallon of cars with $c$ cylinders and $g$ gears. This function should error out gracefully, so be sure to handle cases that do not exist in the data.
+
+
+```{r getMPG}
+
+data(mtcars)
+
+getMPG <- function(data, c, g){
+
+
+}
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+Order the mtcars data by mpg, from highest to lowest. Call this output mtcars2. Next, create a table of the number of cars in the mtcars dataset belonging to each make (e.g., "Mazda", not "Mazda RX4"). This will use strsplit, and may involve an apply or for loop.
+
+
+```{r mtcars}
+
+mtcars2 <- NA
+
+carTable <- NA
+
+```
+
+
+
+
+
+
+
+
+For each one of these car makes, calculate the mean mpg. Return the output as a data.frame containing the columns "make" and "meanMPG".
+
+
+```{r mpgDF}
+
+
+mpgDF <- NA
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
